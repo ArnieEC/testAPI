@@ -14,7 +14,7 @@ describe 'football api' do
   it 'should have Premier League football played in England' do 
     (@football_data['competitions']['name']).each do |compName|
       if compName == 'Premier League' then
-        expect(@football_data['competitions']['area']['name']).to eq('England')
+        expect(@football_data['competitions']['area']['name']).to be('England')
       end
     end
   end
